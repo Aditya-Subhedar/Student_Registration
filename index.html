@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+        .custom-header {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        .registration-form {
+            margin-top: 20px;
+        }
+        .table-custom {
+            margin-top: 20px;
+        }
+        .color-switcher {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header class="custom-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="uni-logo.png" alt="University Logo" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#register">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="home" class="jumbotron text-center">
+            <h1 class="display-4">Student Registration Page</h1>
+            <p class="lead">Register now to start your academic journey with us!</p>
+            <a href="#register" class="btn btn-primary btn-lg">Register Now</a>
+        </section>
+
+        <!-- Background Color Switcher -->
+        <section class="color-switcher text-center">
+            <button onclick="setBackgroundColor('red')" class="btn btn-danger">Red</button>
+            <button onclick="setBackgroundColor('green')" class="btn btn-success">Green</button>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="register" class="registration-form">
+            <h2>Registration Form</h2>
+            <form id="registrationForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </section>
+
+        <!-- Courses Table Section -->
+        <section id="courses" class="table-custom">
+            <h2>Available Courses</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Course ID</th>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Instructor</th>
+                        <th scope="col">Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Computer Science</td>
+                        <td>Dr. John Doe</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MAT201</td>
+                        <td>Calculus I</td>
+                        <td>Prof. Jane Smith</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>ENG101</td>
+                        <td>English Literature</td>
+                        <td>Dr. Emily Brown</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to <a href="mailto:info@university.com">email us</a>.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 University Registration. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap and jQuery JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
